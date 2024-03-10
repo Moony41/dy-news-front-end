@@ -1,0 +1,13 @@
+<app-navbar></app-navbar>
+<body>
+    <div class="container mt-5" *ngIf="article">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <h1 class="text-center mb-4">{{article.title}}</h1>
+          <img src="assets\images\new2.png" alt="Article Image" class="img-fluid mb-4"/>
+        </div>
+        <p class="article-text">{{article.text}}</p>
+    </div>
+</div>
+</body>
+<app-footer></app-footer>

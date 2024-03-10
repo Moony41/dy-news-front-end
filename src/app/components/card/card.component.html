@@ -1,0 +1,12 @@
+<div class="card-container">
+  <div *ngFor="let article of post; let i = index" class="card-wrapper">
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="assets\images\new2.png" alt="Card image">
+      <div class="card-body">
+        <h5 class="card-title">{{ article.title }}</h5>
+        <p class="card-text">{{ article.text | slice:0:200 }}</p>
+        <a (click)="goToArticle(article.id)" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+  </div>
+</div>
